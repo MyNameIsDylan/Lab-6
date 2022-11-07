@@ -49,11 +49,15 @@ def q3(li,el):
 q3(li4,input('enter element to search for in: '))
 
 print ("Question 5")
-a = []
-for i in range(0,100):
-  r = random.randint(0,1)
-  a.append(r)
-print(a)
+ui = 'yes'
+while ui[0] == 'y':
+  a = []
+  for i in range(0,100):
+    r = random.randint(0,1)
+    a.append(r)
+  print(a)
+  ui= input('Generate New Set Of Numbers y/n? ')
+
 
 print ("Question 6")
 li6 = []
