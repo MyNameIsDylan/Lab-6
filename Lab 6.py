@@ -1,4 +1,5 @@
 import random
+
 print ("Question 1")
 qu1 = ''
 li1 = []
@@ -60,11 +61,14 @@ while ui[0] == 'y':
 
 
 print ("Question 6")
-li6 = []
-for i in range(0,10):
-  r = random.randint(0,10)
-  li6.append(r)
-def sumall():
-  sa = sum(li6)
-  print(sa,'is the sum of all elements in',li6)
-sumall()
+ui = 'yes'
+while ui[0] == 'y':
+  li6 = []
+  for i in range(0,10):
+    r = random.randint(0,10)
+    li6.append(r)
+  def sumall():
+    sa = sum(li6)
+    print(sa,'is the sum of all elements in',li6)
+  sumall()
+  ui = input('Generate New Numbers To Find Sum Of y/n? ')
